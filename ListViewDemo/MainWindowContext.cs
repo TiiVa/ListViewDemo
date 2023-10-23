@@ -19,8 +19,7 @@ public class MainWindowContext : INotifyPropertyChanged
             _prodName = value;
             OnPropertyChanged("ProdName");
         }
-    }
-
+    } 
 
 
 
