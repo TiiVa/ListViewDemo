@@ -21,8 +21,8 @@ namespace ListViewDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public DataSource DataSource { get; set; } = new DataSource();
 
-        public DataSource DataSource { get; set; }  = new DataSource(); 
         public MainWindow()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace ListViewDemo
         {
             if (Products.SelectedItem is Product selectedItem)
             {
-
+                
             }
         }
     }
