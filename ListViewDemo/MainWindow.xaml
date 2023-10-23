@@ -14,19 +14,25 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <TextBox Name="Name" />
-            <TextBox Name="Price" Grid.Column="1" />
-        </Grid>
         <ListView
             Name="Products"
             SelectionChanged="Products_OnSelectionChanged"
             SelectionMode="Single" />
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <TextBox Name="NameText" />
+                <TextBox Name="PriceText" />
+            </StackPanel>
+        </Grid>
     </Grid>
-
 
 </Window>
